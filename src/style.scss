@@ -1,0 +1,52 @@
+
+body {
+    box-sizing: border-box;
+    --length: translateX(0%);
+}
+
+
+.main-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+    background-color: darkgrey;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.main-container::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.image-wheel {
+    display: flex;
+    //gap: 6px;
+    //width: 30vw;
+    position: relative;
+   // left: calc(-50vw + 50%);
+    transition: transform 2s ease-in-out;
+    transform: translateX(0%);
+}
+
+.focused {
+    transform: var(--length);
+}
+
+.img-outline {
+    border: 10px solid rgba(32, 178, 171, 0);
+    border-radius: 16px;
+}
+
+img {
+    //border: 6px solid blue;
+    border-radius: 12px;
+    width: 350px;
+    height: 350px;
+   // border: 10px solid lightseagreen;
+   // border-radius: 16px;
+}
