@@ -1,4 +1,6 @@
- let bodi = document.querySelector('body');
+//import 'style.scss';
+//delete bottom initialisation when using
+let bodi = document.querySelector('body');
 
 export default function imageSlider(arrayofimages) {
      let container = document.createElement('div');
