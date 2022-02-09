@@ -2,7 +2,7 @@
 //delete bottom initialisation when using
 let bodi = document.querySelector('body');
 
-export default function imageSlider(arrayofimages) {
+function imageSlider(arrayofimages) {
      let container = document.createElement('div');
      container.classList.add('main-container');
      let imageWheel = document.createElement('div');
