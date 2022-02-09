@@ -1,6 +1,6 @@
  let bodi = document.querySelector('body');
 
- function imageSlider(arrayofimages) {
+export default function imageSlider(arrayofimages) {
      let container = document.createElement('div');
      container.classList.add('main-container');
      let imageWheel = document.createElement('div');
@@ -163,4 +163,4 @@ function reverseSlide(input,index) {
 }
 
 
-imageSlider(['./images/1.jpg', './images/2.jpg', './images/3.jpg', './images/4.jpg', './images/5.jpg', './images/6.jpg', './images/1.jpg', './images/2.jpg', './images/3.jpg', './images/4.jpg', './images/5.jpg', './images/6.jpg', './images/1.jpg', './images/2.jpg', './images/3.jpg', './images/4.jpg', './images/5.jpg', './images/6.jpg', './images/1.jpg', './images/2.jpg', './images/3.jpg', './images/4.jpg', './images/5.jpg', './images/6.jpg']);
+imageSlider(['./images/1.jpg', './images/2.jpg', './images/3.jpg', './images/4.jpg', './images/5.jpg', './images/6.jpg']);
